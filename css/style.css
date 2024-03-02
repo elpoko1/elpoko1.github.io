@@ -34,6 +34,7 @@ nav {
   justify-content: center;
 }
 main {
+  margin-bottom: 30px !important;
   flex: 1;
 }
 .container {
@@ -330,5 +331,10 @@ footer {
 .biography_description{
     gap: 20px;
 }
-
+.skills-img img {
+  max-width: 30px;
+}
+.skills{
+  flex-direction: column;
+}
 }
