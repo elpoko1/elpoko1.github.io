@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100%;
+  background: #eff1f3;
+  font-family: "Montserrat", sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #2e2e2e;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 20px !important;
+  padding: 30px 0;
+  border-radius: 12px;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  flex: 1;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.header {
+  margin-bottom: 50px;
+}
+.logo {
+  font-size: 28px;
+  font-weight: 600;
+}
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.header-content {
+  display: flex;
+  gap: 20px;
+}
+.header-items {
+  transition: 0.3s;
+}
+.header-items:hover {
+  color: blue;
+}
+
+/* section */
+.resume-block {
+  margin-bottom: 50px;
+}
+.resume {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.resume-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+}
+.resume-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.resume-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.resume-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.resume-content img {
+  max-width: 100px;
+}
+.resume-description {
+  max-width: 500px;
+}
+
+/* my poject */
+.project {
+  margin-bottom: 100px;
+}
+.project-cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.project-card {
+  max-width: 320px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.project-img {
+  border-radius: 20px 20px 0 0;
+  max-width: 320px;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.project-title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.project-info {
+  padding: 20px;
+}
+
+/* biography */
+
+.biography {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.biography img {
+  max-width: 200px;
+  border-radius: 10px;
+}
+.biography_description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.biography-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.biography-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.biography-content {
+  display: flex;
+  gap: 30px;
+}
+.additional-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* gallery */
+.gallery{
+    margin-bottom: 100px;
+}
+.gallery-img{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.gallery-img img{
+    max-width: 310px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* skills */
+.skills{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 80px;
+}
+.skills-title{
+    margin-bottom: 80px;
+}
+.skills-table{
+    border-collapse: collapse;
+}
+.skills-table td{
+    text-align: center;
+    padding: 10px;
+    border: rgb(201, 201, 201) solid 1px;
+}
+.skills-table th{
+    text-align: center;
+    padding: 10px;
+    border: rgb(201, 201, 201) solid 1px;
+}
+.skills-cards{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.skills-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.skills-img{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.skills-img img{
+    max-width: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+/* footer */
+
+footer {
+  display: flex;
+  margin-top: auto;
+  margin: 0;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 30px 0;
+  margin-bottom: 20px !important;
+  border-radius: 12px;
+}
+
+@media(max-width: 1100px) {
+    .resume-img{
+        max-width: 200px;
+        width: auto;
+    }
+    .resume-content img{
+        max-width: 10%;
+    }
+    .project-cards{
+        justify-content: center;
+    }
+    .project-card{
+        max-width: 400px;
+        width: 100%;
+    }
+    .project-card img{
+        height: 300px;
+        max-width: 400px;
+        width: 100%;
+    }
+    .resume-info h2{
+        font-size: 18px;
+    }
+    .resume-description{
+        font-size: 14px;
+    }
+    .resume-info li{
+        font-size: 14px;
+    }
+    .resume-contents{
+        gap: 10px;
+    }
+}
+@media(max-width: 900px) {
+    .resume-content{
+        flex-direction: column;
+    }
+    .resume-info{
+        align-items: center;
+    }
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .title{
+        text-align: center;
+    }
+    .resume{
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-img{
+        max-width: 400px;
+        width: 100%;
+    }
+    .resume-content img{
+        max-width: 20%;
+    }
+    .project-card{
+        max-width: 500px;
+        width: 100%;
+    }
+    .project-card img{
+        height: 400px;
+        max-width: 500px;
+        width: 100%;
+    }
+
+}
+@media(max-width: 700px) {
+.biography-content{
+    flex-direction: column;
+    gap: 20px;
+}
+.biography-content img{
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+}
+.biography-content aside{
+    display: flex;
+    justify-content: center;
+}
+.biography_description{
+    gap: 20px;
+}
+
+}
